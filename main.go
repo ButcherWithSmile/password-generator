@@ -2,12 +2,14 @@ package main
 
 import (
 	"PasswordGenerator/funcs"
+	
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/widget"
+	
 	"github.com/atotto/clipboard"
 )
 
@@ -15,7 +17,7 @@ func main() {
 	// This code creates a new Fyne application and window. It also sets the window's icon
 	myApp := app.New()
 	myWindow := myApp.NewWindow("Password Generator")
-	r, _ := fyne.LoadResourceFromURLString("https://raw.githubusercontent.com/Hatef-PR/Password-Generator/main/icon.png")
+	r, _ := fyne.LoadResourceFromURLString("https://raw.githubusercontent.com/ButcherWithSmile/password-generator/main/icon.png")
 	myWindow.SetIcon(r)
 
 	myWindow.Resize(fyne.NewSize(400, 300))
